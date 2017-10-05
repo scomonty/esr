@@ -1,0 +1,73 @@
+    .hero {
+        margin-bottom: 40px;
+        position: relative;
+        height: 83vh;
+        @media only screen and (min-width: 600px) {
+            .hero {
+                height: 90vh
+            }
+        }
+        .row {
+            position: relative;
+            top: 50%;
+            transform: translateY(-50%);
+            .heroCTA {
+                position: absolute;
+                top: 32px;
+                @media only screen and (min-width: 600px) {
+                    top: 112px;
+                }
+                #heroC {
+                    font-family: 'Pacifico', cursive;
+                    visibility: hidden;
+                    font-size: 3.554rem;
+                     @media only screen and (min-width: 600px) {
+                        font-size: 8.854rem;
+                    }
+                }
+                #heroText {
+                    visibility: hidden;
+                    margin-top: 50px;
+                    font-size: 2.754rem;
+                    @media only screen and (min-width: 600px) {
+                        margin-top: 75px;
+                        font-size: 3.618rem;
+                    }
+                }
+                .secondary {
+                    font-size: 1.518rem;
+
+                    @media only screen and (min-width: 600px) {
+                        font-size: 2.618rem;
+                    }
+                }
+            }
+            .image-container {
+                visibility: hidden;
+                text-align: center;
+                img {
+                    height: auto;
+                    width: 115px;
+                    @media only screen and (min-width: 600px) {
+                        width: auto;
+                    }
+                }
+            }
+        }
+        .arrow {
+            position: absolute;
+            bottom: -15px;
+            text-align: center;
+            visibility: hidden;
+            @media only screen and (min-width: 600px) {
+                bottom: 0;
+            }
+        }
+        .fa-arrow-circle-down {
+            color: rgba(255, 255, 255, 0.5);
+            font-size: 40px;
+        }
+    }
+.show {
+    visibility: visible !important
+}

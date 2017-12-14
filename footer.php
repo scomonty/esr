@@ -1,6 +1,7 @@
       <footer>
       <div class="defaultSpace">
         <p>&copy; <?php bloginfo('name'); ?> <?php echo date('Y');?></p>
+        <p>Designed and Built by <a href="http://www.scottrmontgomery.com" target="blank">Webby D LLC </a> | <a href="/sitemap"> Sitemap</a></p>
         </div>
       </footer>
      <!-- /container -->

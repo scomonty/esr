@@ -1,18 +1,15 @@
 @import 'variables.less';
 
+#banner {
+    margin-bottom: 40px;
+    position: relative;
+    height: 100vh;
     .hero {
-        margin-bottom: 40px;
         position: relative;
-        height: 83vh;
-        @media only screen and (min-width: 600px) {
-            .hero {
-                height: 90vh
-            }
-        }
+        top: 50%;
+        transform: translateY(-50%);
         .row {
             position: relative;
-            top: 50%;
-            transform: translateY(-50%);
             .heroCTA {
                 position: absolute;
                 top: 32px;
@@ -20,27 +17,33 @@
                     top: 112px;
                 }
                 #heroC {
+                    color: @third;
+                    font-weight: 900;
+                    text-transform: uppercase;
+                    text-align: center;
                     font-family: @font2;
                     visibility: hidden;
-                    font-size: 3.554rem;
-                     @media only screen and (min-width: 600px) {
-                        font-size: 8.854rem;
+                    font-size: 2.2354em;
+                    @media only screen and (min-width: 600px) {
+                        font-size: 5.557em;
                     }
                 }
                 #heroText {
+                    color: @third;
+                    text-transform: uppercase;
+                    text-align: center;
                     visibility: hidden;
                     margin-top: 50px;
-                    font-size: 2.754rem;
+                    font-size: 1.7598em;
                     @media only screen and (min-width: 600px) {
                         margin-top: 75px;
-                        font-size: 3.618rem;
+                        font-size: 2.26218em;
                     }
                 }
                 .secondary {
-                    font-size: 1.518rem;
-
+                    font-size: .414278em;
                     @media only screen and (min-width: 600px) {
-                        font-size: 2.618rem;
+                        font-size: .7318em;
                     }
                 }
             }
@@ -56,20 +59,22 @@
                 }
             }
         }
-        .arrow {
-            position: absolute;
-            bottom: -15px;
-            text-align: center;
-            visibility: hidden;
-            @media only screen and (min-width: 600px) {
-                bottom: 0;
-            }
-        }
-        .fa-arrow-circle-down {
-            color: rgba(255, 255, 255, 0.5);
-            font-size: 40px;
-        }
     }
+    .arrow {
+        position: absolute;
+        bottom: 0;
+        text-align: center;
+        visibility: hidden;
+        left: 50%;
+    }
+}
+
+.fa-arrow-circle-down {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 40px;
+}
+
+
 .show {
     visibility: visible !important
 }

@@ -1,3 +1,4 @@
+
 $(document).ready(function() {
 		setTimeout(function(){
 		$('.image-container').addClass('show animated fadeIn')
@@ -12,3 +13,7 @@ $(document).ready(function() {
 		$('.arrow').addClass('show animated fadeIn')
 	}, 3500);
 })
+
+
+
+
